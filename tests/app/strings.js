@@ -1,7 +1,7 @@
 describe('strings', () => {
   it('you should be able to reduce duplicate characters to a desired minimum', () => {
     expect(stringsAnswers.reduceString('aaaabbbb', 2)).to.eql('aabb');
-    expect(stringsAnswers.reduceString('xaaabbbb', 2)).to.eql('xaabb');
+    expect(stringsAnswers.reduceString('xxaaabbbb', 2)).to.eql('xxaabb');
     expect(stringsAnswers.reduceString('aaaabbbb', 1)).to.eql('ab');
     expect(stringsAnswers.reduceString('aaxxxaabbbb', 2)).to.eql('aaxxaabb');
   });
